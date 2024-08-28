@@ -11,7 +11,7 @@ const SplashScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
         <Image
-            source={{ uri: 'https://th.bing.com/th/id/OIP.ACcag25gnR5jomrhkhYTwQHaEc?rs=1&pid=ImgDetMain'}}
+            source={require('../assets/log.png')}
             style={styles.logo}
         />
     </View>

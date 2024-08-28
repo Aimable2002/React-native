@@ -171,24 +171,24 @@ const Dashboard = ({ navigation }) => {
               <Text style={styles.headerText}>Task I am doing</Text>
             </View>
             <SecondTable />
-            
       </ScrollView>
     </View>
   );
 };
 
 export default Dashboard ;
-
+//#f5f5f5
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingHorizontal: 12,
-    backgroundColor: '#f5f5f5',
-    
+    backgroundColor: 'white',
   },
   card: {
-    marginHorizontal: 1,
+    // paddingHorizontal: 5,
+    // marginHorizontal: 2,
     width: '100%',
+    // maxWidth: 350,
     borderRadius: 8,
     backgroundColor: '#fff',
     shadowColor: '#000',
@@ -196,7 +196,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.2,
     shadowRadius: 4,
     elevation: 5,
-    margin: 10,
+    marginTop: 10,
   },
   header: {
     padding: 10,

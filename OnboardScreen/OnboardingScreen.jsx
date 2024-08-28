@@ -10,7 +10,7 @@ const OnboardingScreen = ({navigation}) => {
         <View style={styles.slide1}>
             <Text style={{fontSize: 20, fontWeight: 'bold', marginBottom: 15}}>Find Remote Opportunities</Text>
           <Image 
-            source={{uri: 'https://th.bing.com/th/id/R.bbe0362dc41fc46f6f36dd5154dccca7?rik=%2bp8%2fP4OSH9LoXg&pid=ImgRaw&r=0'}}
+            source={require('../assets/business.png')}
             style={{height: 300, width: 300}}
           />
           <View style={{paddingHorizontal: 15}}>
@@ -23,7 +23,7 @@ const OnboardingScreen = ({navigation}) => {
         <View style={styles.slide2}>
         <Text style={{fontSize: 20, fontWeight: 'bold', marginBottom: 15}}>Empower Your Business</Text>
         <Image 
-            source={{uri: 'https://th.bing.com/th/id/OIP.XL1N1u17fi0FXlM84TupWQHaHa?rs=1&pid=ImgDetMain'}}
+            source={require('../assets/market.png')}
             style={{height: 300, width: 300}}
           />
           <View style={{paddingHorizontal: 15}}>
@@ -36,7 +36,7 @@ const OnboardingScreen = ({navigation}) => {
         <View style={styles.slide3}>
         <Text style={{fontSize: 20, fontWeight: 'bold', marginBottom: 15}}>Secure Your Agreements</Text>
         <Image 
-            source={{uri: 'https://img.freepik.com/premium-vector/secure-transaction-isometric-illustration_203633-2795.jpg?w=2000'}}
+            source={require('../assets/secure.avif')}
             style={{height: 300, width: 300}}
           />
           <View style={{paddingHorizontal: 15}}>
@@ -49,7 +49,7 @@ const OnboardingScreen = ({navigation}) => {
         <View style={styles.slide4}>
         <Text style={{fontSize: 20, fontWeight: 'bold', marginBottom: 15}}>Welcome to Familly</Text>
         <Image 
-            source={{uri: 'https://i.pinimg.com/originals/08/f3/e7/08f3e7190e694f02be7abdf22f6d17b8.png'}}
+            source={require('../assets/OIP.png')}
             style={{height: 300, width: 300}}
           />
           <View style={{paddingHorizontal: 15, marginTop: 15}}>

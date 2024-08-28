@@ -48,13 +48,13 @@ const Business = () => {
     </View>
   );
 };
-
+//#f5f5f5
 // Styles for the card component
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingHorizontal: 12,
-    backgroundColor: '#f5f5f5',
+    backgroundColor: 'white',
   },
   card: {
     width: '100%',

@@ -7,14 +7,8 @@ const Login = ({navigation}) => {
   const { loading, login } = useLogin();
 
   const [inputValue, setInputValue] = useState({
-    First_name: '',
-    Last_name: '',
     userName: '',
-    Carrer: '',
-    Email: '',
-    Password: '',
-    Confirm_password: '',  // Corrected the field name
-    Phone_number: ''
+    password: ''
   });
 
   const handleChange = (field, text) => {
@@ -25,9 +19,8 @@ const Login = ({navigation}) => {
   };
 
   const handleLoginSubmit = async () => {
-    const { userName, Password } = inputValue;
-    console.log('inputs :', inputValue);
-    await login({ userName, Password });
+    const { userName, password } = inputValue;
+    await login({ userName, password });
   };
 
   return (
@@ -39,14 +32,14 @@ const Login = ({navigation}) => {
       >
         <ScrollView>
           <Text style={{marginTop: 20, marginBottom: 20, textAlign: 'center', fontSize: 20, fontWeight: 'bold'}}>Login Konect</Text>
-          {['userName', 'Password'].map((field) => {
+          {['userName', 'password'].map((field) => {
             return (
               <TextInput
                 key={field}
                 value={inputValue[field]}
                 onChangeText={(text) => handleChange(field, text)}
                 placeholder={field.replace('_', ' ')}
-                secureTextEntry={field === 'Password'}
+                secureTextEntry={field === 'password'}
                 keyboardType={field === 'Phone_number' ? 'numeric' : 'default'}
                 style={styles.input}
               />

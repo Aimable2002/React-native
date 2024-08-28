@@ -43,14 +43,14 @@ const NotificationPage = () => {
 }
 
 export default NotificationPage
-
+//#f5f5f5
 
 const styles = StyleSheet.create({
     container: {
       flex: 1,
       paddingHorizontal: 12,
       // paddingTop: 1,
-      backgroundColor: '#f5f5f5',
+      backgroundColor: 'white',
     },
     card: {
       marginHorizontal: 1,

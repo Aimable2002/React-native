@@ -88,16 +88,16 @@ const Home = ({ navigation }) => {
 };
 
 export default Home;
-
+//#f5f5f5
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingHorizontal: 12,
     // paddingTop: 1,
-    backgroundColor: '#f5f5f5',
+    backgroundColor: 'white',
   },
   card: {
-    marginHorizontal: 1,
+    // marginHorizontal: 1,
     width: '100%',
     borderRadius: 8,
     backgroundColor: '#fff',
@@ -106,7 +106,15 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.2,
     shadowRadius: 4,
     elevation: 5,
-    margin: 10,
+    marginTop: 10,
+    width: '100%',
+    // maxWidth: 350, // Limits the maximum width of the card
+    
+    marginBottom: 10,
+    // // marginTop: 10,
+    // position: 'relative',
+    // borderRadius: 10,
+    // overflow: 'hidden',
   },
   header: {
     padding: 10,
